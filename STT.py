@@ -7,13 +7,14 @@ import io
 # Setting Up JSON Credentials
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'g.json'
 
+
 class Translator:
     def __init__(self, paths):
         self.paths = paths
         self.client = speech.SpeechClient()
 
     def convertToWAV(self):
-        for i in range(self.paths):
+        for i in range(len(self.paths)):
             file = self.paths[i]
             ext = file[-4:]
 
@@ -51,6 +52,7 @@ class Translator:
             translatedResponses.append("Transcript: {}".format(result.alternatives[0].transcript))
 
         return translatedResponses
+
 
 t = Translator(["University of Toronto.wav"])
 print(t.convertToText())
