@@ -130,4 +130,4 @@ venv.bak/
 
 # Pyre type checker
 .pyre/
-*.json
+./google_secret_key.json
