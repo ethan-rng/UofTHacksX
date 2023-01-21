@@ -31,7 +31,7 @@ const styles = StyleSheet.create(
             borderRadius: 20,
             elevation: 3,
             backgroundColor: '#40376E',
-            margin: '2%',
+            marginVertical: '2%',
         },
 
         container: {
