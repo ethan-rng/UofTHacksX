@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Config and API
+config.py
+google_secret_key.json
+*.wav
+
 # C extensions
 *.so
 
