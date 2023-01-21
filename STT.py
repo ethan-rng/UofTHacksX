@@ -5,7 +5,7 @@ import io
 
 
 # Setting Up JSON Credentials
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google_secret_key.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'g.json'
 
 class Translator:
     def __init__(self, paths):
