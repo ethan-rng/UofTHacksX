@@ -3,9 +3,9 @@ from moviepy.audio.io.AudioFileClip import AudioFileClip
 import os
 import io
 
+
 # Setting Up JSON Credentials
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google_secret_key.json'
-
 
 class Translator:
     def __init__(self, paths):
@@ -51,3 +51,6 @@ class Translator:
             translatedResponses.append("Transcript: {}".format(result.alternatives[0].transcript))
 
         return translatedResponses
+
+t = Translator(["University of Toronto.wav"])
+print(t.convertToText())

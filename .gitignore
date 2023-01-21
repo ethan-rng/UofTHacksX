@@ -133,3 +133,4 @@ venv.bak/
 ./google_secret_key.json
 google_secret_key.json
 *.json
+debug.log
