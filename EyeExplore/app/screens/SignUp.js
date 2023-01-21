@@ -10,7 +10,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 let system = new System();
 let state = true
-function Register() {
+function Register({ navigation }) {
     window.onload = function () {
         if (state) {
 
@@ -67,7 +67,7 @@ function Register() {
                             <TextInput variant="outlined" style={styles.input} type="text" id='username' placeholder='Username' placeholderTextColor={'#40376E'}></TextInput>
                             <TextInput variant="outlined" style={styles.input} type="text" id='email' placeholder='Email Address' placeholderTextColor={'#40376E'}></TextInput>
                             <TextInput variant="outlined" secureTextEntry={true} style={styles.input} type="Password" id='password' placeholder='Password' placeholderTextColor={'#40376E'}></TextInput>
-                            <Pressable id="execute" style={styles.button} onPress={() => navigation.navigate('SignUpLogin')
+                            <Pressable id="execute" style={styles.button} onPress={() => navigation.navigate('Camera')
                             }>
                                 <Text style={styles.start}>Sign Up</Text>
                             </Pressable>
