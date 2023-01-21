@@ -5,7 +5,6 @@ __pycache__/
 
 # Config and API
 config.py
-google_secret_key.json
 *.wav
 
 # C extensions
@@ -127,8 +126,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-.dmypy.json
-dmypy.json
+
 
 # Pyre type checker
 .pyre/
+*.json
