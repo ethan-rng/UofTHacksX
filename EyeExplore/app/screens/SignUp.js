@@ -58,7 +58,7 @@ function Register() {
 
 
             <View>
-                <Text style={styles.welcome}>Create an Account!</Text>
+                <Text style={styles.welcome}>Create an Account!   </Text>
                 <KeyboardAvoidingView
                     behavior={Platform.OS === 'ios' ? 'padding' : 'height'} keyboardVerticalOffset={keyboardVerticalOffset} >
                     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -105,7 +105,7 @@ const styles = StyleSheet.create(
         container: {
             flex: "1",
             justifyContent: 'center',
-            padding: '1.5%',
+            margin: 6,
             alignItems: 'center',
             backgroundColor: '#F2F3FF',
         },

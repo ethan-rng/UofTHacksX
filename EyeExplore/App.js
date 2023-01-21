@@ -3,6 +3,7 @@
 import WelcomeLoading from './app/screens/WelcomeLoading';
 import SignUpLogin from './app/screens/SignUpLogin';
 import SignUp from './app/screens/SignUp';
+import Login from './app/screens/Login';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -23,6 +24,7 @@ export default function App() {
         />
         <Stack.Screen name="SignUpLogin" component={SignUpLogin} />
         <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="Login" component={Login} />
       </Stack.Navigator>
     </NavigationContainer>
   );

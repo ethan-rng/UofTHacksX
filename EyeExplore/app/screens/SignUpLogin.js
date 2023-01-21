@@ -12,7 +12,7 @@ function SignUpLogin({ navigation }) {
                 }>
                     <Text style={styles.start}>Sign Up</Text>
                 </Pressable>
-                <Pressable style={styles.button} onPress={() => navigation.navigate('SignUpLogin')
+                <Pressable style={styles.button} onPress={() => navigation.navigate('Login')
                 }>
                     <Text style={styles.start}>Log in</Text>
                 </Pressable>
@@ -24,7 +24,7 @@ function SignUpLogin({ navigation }) {
 const styles = StyleSheet.create(
     {
         button: {
-            alignItems: 'left',
+            alignItems: 'center',
             justifyContent: 'left',
             paddingVertical: 12,
             paddingHorizontal: 32,
@@ -50,7 +50,7 @@ const styles = StyleSheet.create(
         },
 
         start: {
-            textAlign: 'left',
+            textAlign: 'center',
             fontSize: "38px",
             color: "#F2F3FF",
 
