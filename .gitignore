@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Config and API
+config.py
+*.wav
+
 # C extensions
 *.so
 
@@ -122,8 +126,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-.dmypy.json
-dmypy.json
+
 
 # Pyre type checker
 .pyre/
+./google_secret_key.json
+google_secret_key.json
+*.json
+debug.log
